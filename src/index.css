@@ -1,13 +1,152 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(7, 5, 5);
+  color: aliceblue;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo > span {
+  padding-left: 5px;
+  font-weight: bold;
+}
+
+.links {
+  display: flex;
+  font-size: 14px;
+  align-items: center;
+}
+
+.link {
+  padding-right: 10px;
+  cursor: pointer;
+}
+
+.link:hover {
+  color: darkgray;
+}
+
+.main {
+  height: 100vh;
+}
+
+.banner {
+  display: flex;
+  margin: 5rem auto;
+  background-color: #3b3b37;
+  height: 26rem;
+  border-radius: 0.75rem;
+  width: 60vw;
+}
+
+.sales {
+  display: block;
+  align-self: center;
+  text-align: center;
+  margin: auto;
+  line-height: 0px;
+}
+
+.nft_imge {
+  width: 50%;
+  height: 26rem;
+  border-radius: 0.75rem 0 0 0.75rem;
+}
+
+.small_text {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.big_text {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.gray_text {
+  font-size: 16px;
+  font-weight: bold;
+  color: gray;
+  padding: 10px 0px;
+}
+
+.eth_price {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.coin_img {
+  margin-right: 15px;
+  width: 30px;
+}
+
+.price {
+  font-weight: 400;
+  font-size: 34px;
+}
+
+.counter {
+  display: flex;
+  margin: auto;
+  background-color: aliceblue;
+  color: black;
+  border-radius: 2rem;
+  justify-content: center;
+  padding: 0 1rem;
+  font-size: 30px;
+  font-weight: bold;
+  align-items: center;
+  justify-content: space-between;
+  width: 40%;
+}
+
+.count_button {
+  font-size: 40px;
+  border-radius: 2rem;
+  border: none;
+  background-color: aliceblue;
+  cursor: pointer;
+  padding: 0px 15px;
+}
+
+.sales_count {
+  font-weight: bold;
+  padding: 10px 0px;
+}
+
+.connect {
+  border-radius: 29px;
+  padding: 11px 24px;
+  max-width: 295px;
+  background-color: aliceblue;
+  color: black;
+  cursor: pointer;
+  border: none;
+  font-size: 20px;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.connect:hover {
+  background-color: rgb(223, 232, 240);
 }
