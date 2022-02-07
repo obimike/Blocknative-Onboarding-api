@@ -8,14 +8,15 @@ Blocknative’s open-source JavaScript library to onboard users to Ethereum apps
 
 ---
 
-Steps I took to resolve webpack 5 issues
+Steps I took to resolve webpack 5 issues:
 
 - install 'crypto-browserify'
 - Install 'react-app-rewired'
 - create a file in file in the root directory called config-overrides.js
 - Add the the following code to the above created file
 
-```const webpack = require('webpack');
+```
+const webpack = require('webpack');
 
  module.exports = function override(config, env) {
  //do stuff with the webpack config...
@@ -40,24 +41,17 @@ Steps I took to resolve webpack 5 issues
      return config;
 
  }
-
 ```
 
 - Go your package.json file and make this changes
 
 ```
-
 "scripts": {
 "start": "react-app-rewired start",
 "build": "react-app-rewired build",
 "test": "react-app-rewired test",
 "eject": "react-app-rewired eject"
 },
-
 ```
 
 - Restart your dev server and you are good to go.
-
-```
-
-```
